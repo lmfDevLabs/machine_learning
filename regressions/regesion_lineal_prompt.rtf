@@ -1,0 +1,318 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red152\green227\blue255;
+\red208\green208\blue201;\red68\green195\blue160;\red255\green255\blue254;\red210\green211\blue145;\red168\green198\blue146;
+\red255\green255\blue246;\red255\green255\blue254;\red255\green255\blue246;\red255\green255\blue254;\red148\green222\blue255;
+\red255\green255\blue254;\red206\green207\blue201;\red67\green194\blue160;\red168\green198\blue148;\red0\green0\blue0;
+\red255\green255\blue254;\red255\green255\blue254;\red146\green220\blue255;\red205\green206\blue202;\red255\green255\blue254;
+\red211\green212\blue149;\red105\green151\blue82;\red255\green255\blue255;\red67\green193\blue160;\red211\green213\blue150;
+\red145\green218\blue255;\red168\green198\blue149;\red185\green113\blue179;\red205\green205\blue202;\red74\green142\blue209;
+\red255\green255\blue255;\red211\green213\blue151;\red144\green217\blue255;\red204\green204\blue202;\red168\green198\blue150;
+\red185\green112\blue179;\red67\green193\blue160;\red255\green255\blue255;\red0\green0\blue0;\red72\green140\blue207;
+\red255\green255\blue255;\red212\green213\blue152;\red142\green214\blue255;\red203\green203\blue202;\red167\green197\blue151;
+\red67\green193\blue160;\red184\green111\blue179;\red106\green151\blue84;\red194\green125\blue100;\red255\green255\blue255;
+\red71\green138\blue206;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;\cssrgb\c65228\c91002\c100000;
+\cssrgb\c85126\c85102\c82684;\cssrgb\c31026\c79963\c68976;\cssrgb\c100000\c100000\c99637;\cssrgb\c85799\c85411\c63328;\cssrgb\c71491\c81178\c63947;
+\cssrgb\c99982\c99955\c97115;\cssrgb\c100000\c100000\c99688;\cssrgb\c99887\c99862\c97147;\cssrgb\c100000\c100000\c99705;\cssrgb\c64044\c89619\c100000;
+\cssrgb\c100000\c100000\c99753;\cssrgb\c84548\c84537\c82860;\cssrgb\c30906\c79631\c69009;\cssrgb\c71362\c81089\c64568;\cssrgb\c0\c1\c1;
+\cssrgb\c100000\c100000\c99737;\cssrgb\c100000\c100000\c99785;\cssrgb\c63348\c88807\c100000;\cssrgb\c84207\c84200\c82946;\cssrgb\c100000\c100000\c99817;
+\cssrgb\c86069\c85873\c64973;\cssrgb\c48321\c64725\c39599;\cssrgb\c100000\c100000\c99849;\cssrgb\c30794\c79336\c69023;\cssrgb\c86110\c85948\c65262;
+\cssrgb\c62994\c88395\c100000;\cssrgb\c71233\c80991\c65078;\cssrgb\c77999\c53275\c75330;\cssrgb\c84034\c84029\c82985;\cssrgb\c35408\c63180\c85581;
+\cssrgb\c100000\c100000\c99880;\cssrgb\c86148\c86019\c65549;\cssrgb\c62637\c87978\c100000;\cssrgb\c83858\c83855\c83021;\cssrgb\c71186\c80954\c65244;
+\cssrgb\c77854\c53133\c75328;\cssrgb\c30755\c79236\c69025;\cssrgb\c100000\c100000\c99910;\cssrgb\c0\c1\c1;\cssrgb\c34566\c62178\c84753;
+\cssrgb\c100000\c100000\c99941;\cssrgb\c86216\c86153\c66114;\cssrgb\c61912\c87133\c100000;\cssrgb\c83502\c83501\c83084;\cssrgb\c71087\c80874\c65568;
+\cssrgb\c30674\c79032\c69025;\cssrgb\c77558\c52845\c75316;\cssrgb\c48510\c64955\c40316;\cssrgb\c80757\c56727\c46519;\cssrgb\c100000\c100000\c99971;
+\cssrgb\c34146\c61677\c84338;}
+\margl1440\margr1440\vieww25680\viewh15640\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 Si quisiera ayudar a une empresa aseguradora a predecir el costo de un paciente segun su edad por ejemplo en primer momento y para esto quisiera usar la regresion lineal. Asumamos que tengo alrededor de 925 datos de usuarios donde podemos ver justo estas dos variables, como ves una es independiente y la otra es la variable dependiente, es decir el costo para la aseguradora.\
+\
+Aca un ejemplo del dataset:\
+\
+1047	22	44501.39820\
+105	20	17560.37975\
+293	22	2156.75180\
+134	20	2457.21115\
+47	28	3556.92230\
+180	58	11735.87905\
+1130	39	8582.30230\
+1009	51	9957.72160\
+619	55	10713.64400\
+955	31	3875.73410\
+1165	35	5227.98875\
+1002	24	1972.95000\
+1232	54	12479.70895\
+675	45	7222.78625\
+28	23	2775.19215\
+211	40	8162.71625\
+1245	28	5615.36900\
+486	54	12475.35130\
+1173	38	6457.84340\
+993	38	5484.46730\
+981	34	4500.33925\
+1117	25	36124.57370\
+750	37	19539.24300\
+807	19	2136.88225\
+1018	54	12495.29085\
+892	54	10422.91665\
+463	56	11165.41765\
+946	42	7160.09400\
+1306	29	16115.30450\
+40	24	3046.06200\
+369	18	3481.86800\
+1064	29	5708.86700\
+252	54	44260.74990\
+552	62	12957.11800\
+803	18	38792.68560\
+756	39	7985.81500\
+877	33	6653.78860\
+42	41	6272.47720\
+253	27	4260.74400\
+330	61	48517.56315\
+983	27	16796.41194\
+453	20	1769.53165\
+779	53	9869.81020\
+1059	32	4462.72180\
+1088	52	9748.91060\
+378	64	16455.70785\
+790	39	5662.22500\
+622	49	9182.17000\
+156	48	21223.67580\
+295	18	1704.56810\
+\
+He hecho esto para intentar resolverlo, aunque siente que estoy dando pasos sin un orden muy especifico.\
+\
+1.  Cree la variable as\'ed: X_c\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 X_c\cf2 \strokec5 =\cf2 \strokec6 np\cf2 \strokec7 .\cf2 \strokec8 hstack\cf2 \strokec7 ((\cf2 \strokec6 np\cf2 \strokec7 .\cf2 \strokec8 ones\cf2 \strokec7 ((\cf2 \strokec4 X\cf2 \strokec7 .\cf2 \strokec4 shape\cf2 \strokec7 [\cf2 \strokec9 0\cf2 \strokec7 ],\cf2 \strokec9 1\cf2 \strokec7 )),\cf2 \strokec4 X\cf2 \strokec7 ))\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec10 Inflando 
+\f1\i \cf2 \strokec10 X
+\f0\i0 \cf2 \strokec10 , que es la matriz de variables independientes en un modelo de regresi\'f3n, a\'f1adiendo una columna constante de 1s se hace para incluir el t\'e9rmino intercepto.\
+Obtengo algo as\'ed:\
+\
+\cf2 \strokec11 [[ 1. 50.]\
+ [ 1. 39.]\
+ [ 1. 47.]\
+ ...\
+ [ 1. 33.]\
+ [ 1. 39.]\
+ [ 1. 62.]]\cf2 \strokec10 \
+\cf2 \strokec12 \
+2.  \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Las asignaciones para el desarrollo del taller son en este punto:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+Implementar el algoritmo de descenso de gradiente sobre este dataset. \
+\
+\cf2 \outl0\strokewidth0 \strokec12 Ac\'e1 se sugiere iniciar theta con un valor aleatorio as\'ed\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec14 theta\cf2 \strokec15  \cf2 \strokec16 =\cf2 \strokec15  \cf2 \strokec17 np\cf2 \strokec15 .\cf2 \strokec17 random\cf2 \strokec15 .\cf2 \strokec14 rand\cf2 \strokec15 (\cf2 \strokec14 m\cf2 \strokec15 ,\cf2 \strokec18 1\cf2 \strokec15 )\
+\
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec20 array([[0.69210881],\
+       [0.71042678]])\
+\
+Seg\'fan entendi estos son coeficientes de la caracter\'edstica de edad, \'f3sea nuestra variable independiente	\
+\
+Luego se propone medir \cf19 \strokec21 qu\'e9 tan bueno es este theta aleatorio as\'ed\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec22 Y_est\cf2 \strokec23 =\cf2 \strokec22 X_c\cf2 \strokec24 .\cf2 \strokec25 dot\cf2 \strokec24 (\cf2 \strokec22 theta\cf2 \strokec24 )\
+\cf2 \strokec22 Y_est\cf2 \strokec24  \cf2 \strokec25 -\cf2 \strokec24  \cf2 \strokec22 Y\
+\
+Obteniedo esto:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec24 array([[-10082.21055208],\
+       [ -8937.39699669],\
+       [-26202.49780243],\
+       [ -8571.16208599],\
+       [ -3157.12449486],\
+       [ -2389.12272877],\
+       [-48634.33126461],\
+       [ -1632.23948233],\
+       [-39957.86890382],\
+       [ -7699.11571634],\
+       [-41628.23025921],\
+       [-11032.69999139],\
+       [-28307.52753599],\
+       [-13695.65223312],\
+       [-11903.94626461],\
+       [ -4333.61788416],\
+       [-13876.50518426],\
+       [-36136.00370911],\
+       [ -7708.38611278],\
+       [ -7719.33679312],\
+       [ -7696.01273956],\
+       [-23068.76511233],\
+       [ -9377.63325921],\
+       [-41002.98093956],\
+       [ -4430.97688416],\
+...\
+       [-17880.39085738],\
+       [-28447.6258099 ],\
+       [ -5329.93845738],\
+       [ -6089.09574669],\
+       [-28056.59448069]])\
+\
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec26 #MSE - funci\'f3n de costo, deber\'eda reducirse en cada iteraci\'f3n.\cf19 \strokec27 \
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec28 np\cf19 \strokec27 .\cf19 \strokec29 sum\cf19 \strokec27 (\cf19 \strokec28 np\cf19 \strokec27 .\cf19 \strokec30 power\cf19 \strokec27 (\cf19 \strokec30 Y_est\cf19 \strokec29 -\cf19 \strokec30 Y\cf19 \strokec27 ,\cf19 \strokec31 2\cf19 \strokec27 ))\
+\
+Yo hice esto, pensado que ac\'e1 se podr\'eda hacer la iteraci\'f3n que se menciona en el taller. Pero como ves los valores no cambian.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec32 for\cf19 \strokec27  \cf19 \strokec30 i\cf19 \strokec27  \cf19 \strokec32 in\cf19 \strokec27  \cf19 \strokec28 range\cf19 \strokec27 (\cf19 \strokec31 1000\cf19 \strokec27 ):\
+    \cf19 \strokec30 Y_est\cf19 \strokec33 =\cf19 \strokec30 X_c\cf19 \strokec27 .\cf19 \strokec29 dot\cf19 \strokec27 (\cf19 \strokec30 theta\cf19 \strokec27 )\
+    \cf19 \strokec30 theta\cf19 \strokec27  \cf19 \strokec33 =\cf19 \strokec27  \cf19 \strokec30 theta\cf19 \strokec27  \cf19 \strokec33 -\cf19 \strokec27  (\cf19 \strokec31 0.0001\cf19 \strokec33 /\cf19 \strokec30 n\cf19 \strokec27 )\cf19 \strokec33 *\cf19 \strokec30 X_c\cf19 \strokec27 .\cf19 \strokec30 T\cf19 \strokec27 .\cf19 \strokec29 dot\cf19 \strokec27 (\cf19 \strokec30 Y_est\cf19 \strokec29 -\cf19 \strokec30 Y\cf19 \strokec27 )\
+    \cf19 \strokec29 print\cf19 \strokec27 (\cf19 \strokec28 np\cf19 \strokec27 .\cf19 \strokec29 sum\cf19 \strokec27 (\cf19 \strokec28 np\cf19 \strokec27 .\cf19 \strokec30 power\cf19 \strokec27 (\cf19 \strokec30 Y_est\cf19 \strokec29 -\cf19 \strokec30 Y\cf19 \strokec27 ,\cf19 \strokec31 2\cf19 \strokec27 )))\
+\
+Obteniedo esto:\
+\
+124998883458.4325\
+124998848400.33296\
+124998813343.04115\
+124998778286.55704\
+124998743230.8806\
+124998708176.01184\
+124998673121.95074\
+124998638068.69724\
+124998603016.25136\
+124998567964.61307\
+124998532913.78235\
+124998497863.75919\
+124998462814.54355\
+124998427766.13544\
+124998392718.53482\
+124998357671.74167\
+124998322625.75598\
+124998287580.57773\
+124998252536.20692\
+124998217492.64351\
+124998182449.88748\
+124998147407.93883\
+124998112366.7975\
+124998077326.4635\
+124998042286.93683\
+...\
+124964362786.8397\
+124964328524.07831\
+124964294262.1063\
+124964260000.92366\
+\
+Ac\'e1 intente hacer el algoritmo de descenso de gradiente as\'ed:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec34 def\cf2 \strokec35  \cf2 \strokec36 gradient_descent\cf2 \strokec35 (\cf2 \strokec37 X\cf2 \strokec35 ,\cf2 \strokec37 Y\cf2 \strokec35 ,\cf2 \strokec37 theta\cf2 \strokec35 ,\cf2 \strokec37 learning_rate\cf2 \strokec35 ,\cf2 \strokec37 iterations\cf2 \strokec35 ):\
+    \cf2 \strokec37 m\cf2 \strokec35  \cf2 \strokec38 =\cf2 \strokec35  \cf2 \strokec37 X\cf2 \strokec35 .shape[\cf2 \strokec39 0\cf2 \strokec35 ]\
+    \cf2 \strokec40 for\cf2 \strokec35  \cf2 \strokec37 i\cf2 \strokec35  \cf2 \strokec40 in\cf2 \strokec35  \cf2 \strokec41 range\cf2 \strokec35 (\cf2 \strokec37 iterations\cf2 \strokec35 ):\
+        \cf2 \strokec37 Y_est\cf2 \strokec35  \cf2 \strokec38 =\cf2 \strokec35  \cf2 \strokec37 X\cf2 \strokec35 .dot(\cf2 \strokec37 theta\cf2 \strokec35 )\
+        \cf2 \strokec37 theta\cf2 \strokec35  \cf2 \strokec38 =\cf2 \strokec35  \cf2 \strokec37 theta\cf2 \strokec35  \cf2 \strokec38 -\cf2 \strokec35  (\cf2 \strokec37 learning_rate\cf2 \strokec38 /\cf2 \strokec37 m\cf2 \strokec35 ) \cf2 \strokec38 *\cf2 \strokec35  \cf2 \strokec37 X\cf2 \strokec35 .T.dot(\cf2 \strokec37 Y_est\cf2 \strokec38 -\cf2 \strokec37 Y\cf2 \strokec35 )\
+    \cf2 \strokec40 return\cf2 \strokec35  \cf2 \strokec37 theta\cf2 \strokec35 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec37 theta\cf2 \strokec35  \cf2 \strokec38 =\cf2 \strokec35  \cf2 \strokec41 np\cf2 \strokec35 .\cf2 \strokec41 random\cf2 \strokec35 .\cf2 \strokec37 rand\cf2 \strokec35 (\cf2 \strokec37 m\cf2 \strokec35 ,\cf2 \strokec39 1\cf2 \strokec35 )\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec36 print\cf2 \strokec35 (\cf2 \strokec37 theta\cf2 \strokec35 )\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec37 theta\cf2 \strokec35  \cf2 \strokec38 =\cf2 \strokec35  \cf2 \strokec36 gradient_descent\cf2 \strokec35 (\cf2 \strokec37 X_c\cf2 \strokec35 ,\cf2 \strokec37 Y\cf2 \strokec35 ,\cf2 \strokec37 theta\cf2 \strokec35 ,\cf2 \strokec39 0.0001\cf2 \strokec35 ,\cf2 \strokec39 1000\cf2 \strokec35 )\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec36 print\cf2 \strokec35 (\cf2 \strokec37 theta\cf2 \strokec35 )\
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec27 \
+Opteniedo este theta:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec35 [[ 52.28917496]\
+ [327.01471038]]\cf19 \strokec27 \
+\
+\
+Estos valores segun entendi son coeficientes que se explica as\'ed:\
+\
+\pard\pardeftab720\sa320\partightenfactor0
+
+\fs26 \cf19 \strokec42 Si tus valores de\'a0
+\fs24 \cf19 \strokec42 theta
+\fs26 \cf19 \strokec42 \'a0son\'a0
+\fs24 \cf19 \strokec42 [[ 51.86686428], [327.02423618]]
+\fs26 \cf19 \strokec42 , entonces\'a0
+\fs24 \cf19 \strokec42 51.86686428
+\fs26 \cf19 \strokec42 \'a0ser\'eda\'a0
+\fs24 \cf19 \strokec42 theta_1
+\fs26 \cf19 \strokec42 \'a0(el coeficiente de la edad) y\'a0
+\fs24 \cf19 \strokec42 327.02423618
+\fs26 \cf19 \strokec42 \'a0ser\'eda\'a0
+\fs24 \cf19 \strokec42 theta_0
+\fs26 \cf19 \strokec42 \'a0(la intersecci\'f3n y).\
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec42 Esto significa que, seg\'fan tu modelo, por cada a\'f1o adicional de edad, el costo para la aseguradora aumenta en promedio en\'a0
+\fs24 \cf19 \strokec42 51.86686428
+\fs26 \cf19 \strokec42 \'a0unidades. Adem\'e1s, el costo base (cuando la edad es 0) es\'a0
+\fs24 \cf19 \strokec42 327.02423618
+\fs26 \cf19 \strokec42 \'a0unidades.\
+\
+Tengo esto para la tasa de error:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf43 \strokec44 def\cf43 \strokec45  \cf43 \strokec46 calculate_mse\cf43 \strokec45 (\cf43 \strokec47 X\cf43 \strokec45 , \cf43 \strokec47 Y\cf43 \strokec45 , \cf43 \strokec47 theta\cf43 \strokec45 ):\
+    \cf43 \strokec47 m\cf43 \strokec45  \cf43 \strokec48 =\cf43 \strokec45  \cf43 \strokec47 X\cf43 \strokec45 .shape[\cf43 \strokec49 0\cf43 \strokec45 ]\
+    \cf43 \strokec47 Y_pred\cf43 \strokec45  \cf43 \strokec48 =\cf43 \strokec45  \cf43 \strokec47 X\cf43 \strokec45 .dot(\cf43 \strokec47 theta\cf43 \strokec45 )\
+    \cf43 \strokec47 mse\cf43 \strokec45  \cf43 \strokec48 =\cf43 \strokec45  (\cf43 \strokec49 1\cf43 \strokec48 /\cf43 \strokec45 (\cf43 \strokec49 2\cf43 \strokec48 *\cf43 \strokec47 m\cf43 \strokec45 )) \cf43 \strokec48 *\cf43 \strokec45  \cf43 \strokec50 np\cf43 \strokec45 .\cf43 \strokec46 sum\cf43 \strokec45 ((\cf43 \strokec47 Y_pred\cf43 \strokec45  \cf43 \strokec48 -\cf43 \strokec45  \cf43 \strokec47 Y\cf43 \strokec45 )\cf43 \strokec48 **\cf43 \strokec49 2\cf43 \strokec45 )\
+    \cf43 \strokec51 return\cf43 \strokec45  \cf43 \strokec47 mse\cf43 \strokec45 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec52 # Assuming you have a separate test dataset X_test and Y_test\cf43 \strokec45 \
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec47 mse\cf43 \strokec45  \cf43 \strokec48 =\cf43 \strokec45  \cf43 \strokec46 calculate_mse\cf43 \strokec45 (X_test, Y_test, \cf43 \strokec47 theta\cf43 \strokec45 )\
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec46 print\cf43 \strokec45 (\cf43 \strokec53 "Mean Squared Error on test dataset: "\cf43 \strokec45 , \cf43 \strokec47 mse\cf43 \strokec45 )\
+\
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec52 # If you want to calculate RMSE\cf43 \strokec45 \
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec47 rmse\cf43 \strokec45  \cf43 \strokec48 =\cf43 \strokec45  \cf43 \strokec50 np\cf43 \strokec45 .\cf43 \strokec47 sqrt\cf43 \strokec45 (\cf43 \strokec47 mse\cf43 \strokec45 )\
+\pard\pardeftab720\partightenfactor0
+\cf43 \strokec46 print\cf43 \strokec45 (\cf43 \strokec53 "Root Mean Squared Error on test dataset: "\cf43 \strokec45 , \cf43 \strokec47 rmse\cf43 \strokec45 )\
+\pard\pardeftab720\partightenfactor0
+
+\fs26 \cf19 \strokec42 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf19 \strokec27 Pero segun entiendo y se ve en los par\'e1metros debo pasar el set de datos de testeo. Lo que en este punto me confunde, porque si los tengo divididos, pero no sabia que hacer con eso.\
+\
+Estas son las asignaciones finales:\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec54 realice las iteraciones necesarias para ir actualizando $\cf2 \strokec55 \\theta\cf2 \strokec54 $ para minimizar la funci\'f3n de costo.\
+\
+* Una vez llegue a la convergencia del algoritmo, mida el performance del modelo sobre el conjunto de validaci\'f3n y prueba. No olvide tambi\'e9n "inflar" los conjuntos de datos para incluir la columna constante.\
+\
+* Debe implementar la funci\'f3n `fit_model` que reciba un conjunto de datos X y unas etiquetas Y y retorne el vector `theta` ajustado.\
+\
+* Su c\'f3digo deber\'eda funcionar con conjuntos de datos de un X de tama\'f1o arbitrario, incluya m\'e1s variables en X y mida su error.\
+\
+* Documente su c\'f3digo y realice conclusiones frente al ejercicio.\
+\pard\pardeftab720\partightenfactor0
+\cf19 \strokec27 \
+\
+\cf2 \strokec24 \
+\
+\cf19 \strokec21 \
+\
+\cf2 \strokec15 \
+\
+\
+\
+\cf2 \strokec11 \
+}
